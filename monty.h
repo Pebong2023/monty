@@ -76,7 +76,7 @@ void free_all(void);
 int _isdigit(char *string);
 
 /* ================================================================= */
-/* for_funct_1.c */
+/* dev_funct_1.c */
 /* ================================================================= */
 void pall(stack_t **stack, unsigned int line_number);
 void push(stack_t **stack, unsigned int line_number);
@@ -92,7 +92,7 @@ void sub(stack_t **stack, unsigned int line_number);
 void divi(stack_t **stack, unsigned int line_number);
 
 /* ================================================================= */
-/* mon_funct_3.c */
+/* dev_funct_3.c */
 /* ================================================================= */
 void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
@@ -100,7 +100,7 @@ void pchar(stack_t **stack, unsigned int line_number);
 void pstr(stack_t **stack, unsigned int line_number);
 
 /* ================================================================= */
-/* dev1_funct_4.c */
+/* dev_funct_4.c */
 /* ================================================================= */
 void rotl(stack_t **stack, unsigned int line_number);
 void rotr(stack_t **stack, unsigned int line_number);
