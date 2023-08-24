@@ -30,16 +30,16 @@ typedef struct stack_s
 } stack_t;
 
 /**
- * struct instruction_s - Opcode and its function
- * @opcode: the opcode
- * @f: function to handle the opcode
+ * struct instruction_s - devcode and its function
+ * @devcode: the devcode
+ * @f: function to handle the devcode
  *
- * Description: opcode and its function
+ * Description: devcode and its function
  * for stack, queues, LIFO, FIFO
  */
 typedef struct instruction_s
 {
-    char *opcode;
+    char *devcode;
     void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
@@ -71,7 +71,7 @@ extern vars var;
 /* ================================================================= */
 int start_vars(vars *var);
 instruction_t *create_instru();
-int call_funct(vars *var, char *opcode);
+int call_funct(vars *var, char *devcode);
 void free_all(void);
 int _isdigit(char *string);
 
@@ -87,7 +87,7 @@ void pop(stack_t **stack, unsigned int line_number);
 /* dev_funct_2.c */
 /* ================================================================= */
 void swap(stack_t **stack, unsigned int line_number);
-void add(stack_t **stack, unsigned int line_number);
+void add(stack_t **stack, unsigned int tline_number);
 void sub(stack_t **stack, unsigned int line_number);
 void divi(stack_t **stack, unsigned int line_number);
 
