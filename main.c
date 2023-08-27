@@ -29,7 +29,7 @@ int main(int ac, char **av)
         return (EXIT_FAILURE);
     }
 
-    while (getline(&var.buff, &var.tmp, var.file) != EOF)
+    while (tmp(&var.buff, &var.tmp, var.file) != EOF)
     {
         devcode = strtok(var.buff, " \r\t\n");
         if (devcode != NULL)
